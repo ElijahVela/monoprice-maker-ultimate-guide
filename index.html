@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Monoprice Maker Ultimate Training Manual</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="style.css">
+</head>
+
+<nav>
+    <ul>
+       <li><a href="#intro">Introduction</a></li> 
+       <li><a href="#downloadInstall">Install Cura</a></li>
+       <li><a href="#leveling">Leveling the Buildplate</a></li>
+       <li><a href="#firstPrint">Printing your First Model</a></li>
+       <li><a href="#printing">In-depth Printing</a></li>
+       <li><a href="#troubleshooting">Troubleshooting</a></li>
+       <li><a href="#furtherReading">Further Reading</a></li>
+    </ul>
+</nav>
+
+<body>
+    <div id="content">
+    <div id="intro">
+        <h1>Introduction:</h1>
+
+        <p>This guide covers the basics of 3D printing with the Monoprice Maker Ultimate. I’m assuming that 
+            you’ve already read through the Maker Ultimate User Manual and that your printer is already 
+            assembled. I am using a Mac, so if you’re on a Windows system, the software may look different. 
+            However, I’ve made sure to include Windows-specific instructions for important steps. That being said, 
+            let’s jump into 3D printing! 
+        </p>
+    </div>
+    <hr>
+    <div id="downloadInstall">
+        <h1>Downloading and Installing Ultimaker Cura:</h1>   
+        <ol>
+            <li>Visit <a href = "https://ultimaker.com/software/ultimaker-cura">this link</a> to download Ultimaker 
+                Cura</li>
+            <li>Click download, select your operating system, then click download now.</li> 
+            <img src="imgs/download1.png" class="large">
+            <img src="imgs/download2.png" class="large">
+            <li>Install Cura:
+                <dl>
+                    <dt>Mac:<dt>
+                        <dd>
+                            <ol>
+                                <li>Open the .dmg file</li>
+                                <li>Drag Cura into the applications folder shortcut </li>
+                            </ol>
+                        </dd>
+                        <img src="imgs/mac_install.png" class="large shadowless">
+                        <dt>Windows:</dt>
+                        <dd>
+                            <ol>
+                                <li>Run Ultimaker_Cura-[version].exe</li>
+                            </ol>
+                        </dd>
+                        <!-- Add windows installation image here -->
+                    </li>
+                </dl>
+            </li>
+        </ol>
+    </div>
+    <hr>
+    <div id="leveling">
+        <h1>Leveling the buildplate:</h1>
+        <p> To start leveling, turn on your printer and select Maintenance > Buildplate, then follow the steps on the 
+        LED screen. 
+        <br><br>
+        I used a digital caliper to take measurements. For the nozzle to be 1 mm from the buildplate, the top of 
+        the nozzle should be 20 mm from the top of the buildplate and 26.5 mm from the underside edges of the 
+        buildplate. 
+        </p>
+        <div class="row">
+            <div class="column"><img src="imgs/20mm.jpg"></div> 
+            <div class="column"><img src="imgs/26mm.jpg"></div>
+        </div>
+    </div>
+    <hr>
+    <div id="firstPrint">
+        <h1>Printing your first model:</h1>
+        <h3>You’re going to need: </h3>
+        <ol>
+            <li>An SD Card</li>
+            <li>A 3D model (For the purpose of this guide, we’ll use a model from Thingverse: Flexi Rex by user 
+                DrLex.)</li>
+            <li>SD to USB adapter (optional)</li>
+        </ol>
+
+        <h3>And to print:</h3>
+        <ol>
+            <li>If your model is still zipped, unzip your file and take note of the file location</li>
+            <li>Open Ultimaker Cura (If you see a security warning, just click open)</li>
+            <li>Click the <img src="imgs/folder_symbol.png" class="symbol"> icon and select your file</li>
+            <li>Click the Slice button</li>
+            <li>Click the Save to Removable Drive button</li>
+            <img src="imgs/first_print.png" class="large">
+            <li>Click the Eject button</li>
+            <li>Remove your SD card and insert it into your 3D printer</li>
+            <li>On the printer, select Print > Your_model_name.gcode > continue</li>
+            <li>Wait for print to finish</li>
+        </ol>
+    </div>
+    <hr>
+    <div id="printing">
+        <h1>In-depth Printing:</h1>
+        
+        <h2>Find/make models</h2>
+        <p>There are many online communities for sharing and making 3D models. I’ve listed a few below.</p>
+        
+        <div class="table">
+        <table>
+            <tr>
+                <th>Site</th>
+                <th>URL</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Thingiverse</td>
+                <td>www.thingiverse.com</td>
+                <td>Active online community; Many Free-to-download models; Unpredictable quality models; Can be 
+                    difficult to browse and search; no account required</td>
+            </tr>
+            <tr>
+                <td>Cults</td>
+                <td>www.cults3d.com</td>
+                <td>Lots of free-to-download models; Some models require purchase; Can be difficult to search; 
+                    Requires account to download models</td>
+            </tr>
+            <tr>
+                <td>Pinshape</td>
+                <td>www.pinshape.com</td>
+                <td>Well-organized; many free models; some models require purchase; requires account to download 
+                    models</td>
+            </tr>
+            <tr>
+                <td>MyMiniFactory</td>
+                <td>www.myminifactory.com</td>
+                <td>Easy to navigate; many free and paid models; no account required</td>
+            </tr>
+            <tr>
+                <td>Yeggi</td>
+                <td>www.yeggi.com</td>
+                <td>3D model search engine; Useful for finding models in any database</td>
+            </tr>
+            <tr>
+                <td>TinkerCAD</td>
+                <td>www.tinkercad.com</td>
+                <td>Online 3D modeling software; Free to use with an account; Easy to learn; Lots of online 
+                    tutorials; Somewhat limited in its capability</td>
+            </tr>
+        </table>
+        </div>
+
+        <p>Once you’ve decided on a model, download it and unzip it, taking note of where the files are saved.</p>
+        
+        <h2>Import model</h2>
+        <p>Open Ultimaker Cura and import your model. There are several ways to do this:</p>
+        <ol>
+            <li>click the <img src="imgs/folder_symbol.png" class="symbol"> icon and select your file</li>
+            <li>Click File > Open File(s) (or press ⌘  + O on mac, CTRL + O on windows) from the ribbon and select 
+                your file</li>
+            <li>Drag and drop your file into Ultimaker Cura</li>
+        </ol>
+        
+        <h2>Prepare model for printing:</h2>
+        
+        <h3>Position model</h3>
+        <p>You can move your model by clicking and dragging or by manually entering the position coordinates. 
+            Additionally, you can rotate, rescale, and mirror your model using the positioning tools on the left side 
+            of the window.</p>
+        
+        <h3>Set print options:</h3>
+        <img src="imgs/basic_settings.png" alt="Ultimaker Cura basic settings" title="Basic Settings" class="large">
+        <p>For some prints, it may be necessary to play with the print settings. Here is a list of the basic settings 
+            and what they do.</p>
+        
+        <div class="table">
+        <table>
+            <tr>
+                <th>Setting</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Layer Height</td>
+                <td>Affects the speed, detail, and smoothness of a print. A larger layer height results in a faster, 
+                    less detailed, rougher print and a smaller layer height results in a slower, more detailed, 
+                    smoother print.</td>
+            </tr>
+            <tr>
+                <td>Infill</td>
+                <td>Changes density of print. A higher infill can take longer, but increases the structural 
+                    integrity of a print. A lower infill can be faster but makes a print more brittle.</td>
+            </tr>
+            <tr>
+                <td>Gradual Infill</td>
+                <td>Increases infill during print. Can increase print speed. Select this option if detail isn’t 
+                    important near the bottom of the print.</td>
+            </tr>
+            <tr>
+                <td>Support Structures</td>
+                <td>Generates small, removable structures in areas with overhang. Select this if your print has 
+                    large areas with overhang. You can also choose certain areas to print without support structures 
+                    using the “block supports” tool.</td>
+            </tr> 
+            <tr>
+                <td>Adhesion</td>
+                <td>Generates small, removable platform underneath print. Prevents print from falling over mid-print.</td>
+            </tr>     
+        </table>
+        </div>
+
+        <h4>Advanced Print Settings</h4>
+        <img src="imgs/advanced_settings.png" alt="Ultimkaer Cura advanced settings" title="Advanced Settings" class="large">
+        <p>Cura includes some more advanced settings. For a detailed guide to each of these settings, visit 
+            <a href="https://ultimaker.com/en/resources/52835-quality">this site</a>.</p>
+        
+        <h2>Save to SD Card:</h2>
+        <p>If you haven’t already inserted your SD card, do it now. Click the slice button. Wait for the program to 
+            generate the .gcode file, then click the “Save to Removable Drive” button. Then, click the “Eject” button and 
+            remove the SD card.</p>
+        
+        <h2>Printing Model</h2>
+        <p>Insert your SD card into the printer. Select Print > Your_Model_Name. The print should begin. I recommend 
+            watching your print for the first couple layers to make sure your model is printing correctly. If you notice 
+            printing errors, you can change settings in Cura, or tweak your print settings in the “Tune” menu on the 
+            printer.</p>
+        
+        <h2>Removing and cleaning model</h2>
+        <p>Once your print has finished, it can be removed from the print bed with a spatula. If it takes more than gentle
+            force to remove print, it can help to heat up the print bed. Select Maintenance > Advanced > Heatup buildplate.
+            Set the temperature to 60˚ C. Increase if necessary. If you printed with supports, you can remove them now 
+            using a craft knife or by just breaking them with your hands.</p>
+    </div>
+    <hr>
+    <div id="Troubleshooting">
+        <h1>Troubleshooting:</h1>
+        <p>Often times, prints can turn out lower-than-expected quality or can fail to print entirely. When this happens,
+            I find a good first step is to Google your issue. Usually, other people have run into the same issue and
+            shared their solution. Additionally, I have included a log of the issues I have experienced and the steps I 
+            took to solve the problem. </p>
+        
+    </div>
+    <hr>
+    <div id="furtherReading">
+        <h1>Further Reading:</h1>
+        
+        <a href=https://ultimaker.com/en/resources/52833-install-ultimaker-cura>Ultimaker Cura Tutorial</a>
+        <p>A comprehensive guide to Ultimaker Cura. Includes a useful section about each of the print settings and what 
+           they do.</p>
+    </div>
+    </div>
+</body>
+
+</html>
